@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit Curso</title>
+    <link rel="stylesheet" href="/public/css/styles.css">
+</head>
+<body>
+    <h1>Editar Curso</h1>
+    <form action="/edit-curso/<%= curso.id %>" method="post">
+        <input type="number" name="carga_horaria" placeholder="Carga Horária" value="<%= curso.carga_horaria %>">
+        <input type="text" name="turno" placeholder="Turno" value="<%= curso.turno %>">
+        <input type="text" name="professor" placeholder="Professor" value="<%= curso.professor %>">
+        <input type="text" name="disciplina" placeholder="Disciplina" value="<%= curso.disciplina %>">
+        <button type="submit">Atualizar</button>
+    </form>
+</body>
+</html>
